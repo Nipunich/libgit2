@@ -35,6 +35,7 @@ INCLUDE(EnableWarnings)
 
 # Build options
 #
+
 OPTION(SONAME				"Set the (SO)VERSION of the target"			 ON)
 OPTION(BUILD_SHARED_LIBS		"Build Shared Library (OFF for Static)"			 ON)
 OPTION(THREADSAFE			"Build libgit2 as threadsafe"				 ON)
@@ -63,6 +64,7 @@ IF (UNIX)
 	ELSE()
 	    OPTION(USE_NTLMCLIENT		"Enable NTLM support on Unix."				ON )
 	ENDIF()
+
 ENDIF()
 
 IF (UNIX AND NOT APPLE)
